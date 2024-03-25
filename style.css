@@ -1,0 +1,23 @@
+:root {
+  --clr-neutral-900: hsl(0, 0%, 98%);
+  --clr-neutral-500: hsl(0, 0%, 41%);
+  --clr-neutral-100: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
