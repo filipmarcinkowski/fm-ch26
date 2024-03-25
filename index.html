@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <!-- <link
       rel="icon"
@@ -25,26 +24,27 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <header>
+    <!-- HEADER -->
+    <header class="header">
       <img src="./images/logo.svg" alt="snap - company logo" />
       <!-- NAVIGATION -->
       <nav class="nav">
         <img
-          class="menu_open"
+          class="menu_open hidden"
           src="./images/icon-menu.svg"
           alt="hamburger menu icon"
         />
         <div class="menu-container">
-          <ul>
+          <ul class="menu">
             <!-- FEATURES -->
-            <li>
+            <li class="menu__small-menu__box">
               <p>Features</p>
               <img
-                src="./images/icon-arrow-up.svg"
+                src="./images/icon-arrow-down.svg"
                 alt="arrow icon"
                 alt="icon"
               />
-              <ul>
+              <ul class="hidden">
                 <li>
                   <img
                     src="./images/icon-todo.svg"
@@ -80,15 +80,15 @@
               </ul>
             </li>
             <!-- COMPANY -->
-            <li>
+            <li class="menu__small-menu__box">
               <p>Company</p>
 
               <img
-                src="./images/icon-arrow-up.svg"
+                src="./images/icon-arrow-down.svg"
                 alt="arrow icon"
                 alt="icon"
               />
-              <ul>
+              <ul class="hidden">
                 <li>
                   <a href="#" class="menu__features">History</a>
                 </li>
@@ -109,19 +109,16 @@
             </li>
           </ul>
           <!-- REGI-LOG -->
-          <div>
+          <div class="RegLog-box">
             <a href="#" class="menu-link">Login</a>
             <button><a href="#" class="menu-link">Register</a></button>
           </div>
         </div>
       </nav>
     </header>
-    <main class="container">
-      <img
-        class="hero-img"
-        src="./images/image-hero-desktop.png"
-        alt="Colorful graphic with many shapes, such as triangles, is depicted in the background, with a man holding a laptop on one of the shapes."
-      />
+    <!-- MAIN -->
+    <main class="main">
+      <!-- hero -->
       <section class="hero">
         <h1>Make remote work</h1>
         <p>
@@ -160,8 +157,15 @@
           </li>
         </ul>
       </section>
+      <!-- hero-img -->
+      <div class="hero-img__box">
+        <img
+          class="hero-img__img"
+          src="./images/image-hero-desktop.png"
+          alt="Colorful graphic with many shapes, such as triangles, is depicted in the background, with a man holding a laptop on one of the shapes."
+        />
+      </div>
     </main>
-
     <script src="./script.js"></script>
   </body>
 </html>
