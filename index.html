@@ -24,148 +24,174 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <img src="./images/logo.svg" alt="snap - company logo" />
-      <!-- NAVIGATION -->
-      <nav class="nav">
-        <img
-          class="menu_open hidden"
-          src="./images/icon-menu.svg"
-          alt="hamburger menu icon"
-        />
-        <div class="menu-container">
-          <ul class="menu">
-            <!-- FEATURES -->
-            <li class="menu__small-menu__box">
-              <p>Features</p>
-              <img
-                src="./images/icon-arrow-down.svg"
-                alt="arrow icon"
-                alt="icon"
-              />
-              <ul class="hidden">
-                <li>
-                  <img
-                    src="./images/icon-todo.svg"
-                    alt="todo icon"
-                    class="icon"
-                  />
-                  <a href="#" class="menu__features">Todo List</a>
-                </li>
-                <li>
-                  <img
-                    src="./images/icon-calendar.svg"
-                    alt="calender icon"
-                    class="icon"
-                  />
-                  <a href="#" class="menu__features">Calender</a>
-                </li>
-                <li>
-                  <img
-                    src="./images/icon-reminders.svg"
-                    alt="reminders icon"
-                    class="icon"
-                  />
-                  <a href="#" class="menu__features">Reminders</a>
-                </li>
-                <li>
-                  <img
-                    src="./images/icon-planning.svg"
-                    alt="planning icon"
-                    class="icon"
-                  />
-                  <a href="#" class="menu__features">Planning</a>
-                </li>
-              </ul>
-            </li>
-            <!-- COMPANY -->
-            <li class="menu__small-menu__box">
-              <p>Company</p>
+    <div class="main-container">
+      <!-- HEADER -->
+      <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="snap - company logo" />
+        <!-- NAV CONTAINER -->
+        <nav class="nav">
+          <img
+            class="menu_open hidden"
+            src="./images/icon-menu.svg"
+            alt="hamburger menu icon"
+          />
+          <!-- NAVIGATION -->
+          <div class="menu-container">
+            <!-- MENU -->
+            <ul class="menu">
+              <!-- FEATURES -->
+              <li class="menu__dropdown-box">
+                <p class="menu-dropdown">Features</p>
 
+                <svg
+                  class="icon"
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke=""
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+
+                <ul class="hidden">
+                  <li>
+                    <img
+                      src="./images/icon-todo.svg"
+                      alt="todo icon"
+                      class="icon"
+                    />
+                    <a href="#" class="menu__features menu-link">Todo List</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/icon-calendar.svg"
+                      alt="calender icon"
+                      class="icon"
+                    />
+                    <a href="#" class="menu__features menu-link">Calender</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/icon-reminders.svg"
+                      alt="reminders icon"
+                      class="icon"
+                    />
+                    <a href="#" class="menu__features menu-link">Reminders</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/icon-planning.svg"
+                      alt="planning icon"
+                      class="icon"
+                    />
+                    <a href="#" class="menu__features menu-link">Planning</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- COMPANY -->
+              <li class="menu__dropdown-box">
+                <p class="menu-dropdown">Company</p>
+
+                <svg
+                  class="icon"
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke=""
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+                <ul class="hidden">
+                  <li>
+                    <a href="#" class="menu__features menu-link">History</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__features menu-link">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__features menu-link">Blog</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- OTHERS -->
+              <li>
+                <a href="#" class="menu-link">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link">About</a>
+              </li>
+            </ul>
+            <!-- REG-LOG -->
+            <div class="menu">
+              <a href="#" class="menu-link">Login</a>
+              <button class="btn">
+                <a href="#" class="menu-link btn-link">Register</a>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <!-- hero -->
+        <section class="hero">
+          <div class="title-box">
+            <h1>Make remote work</h1>
+            <p class="title-desc">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn btn-more">Learn more</button>
+          </div>
+          <ul class="clients">
+            <li class="client">
               <img
-                src="./images/icon-arrow-down.svg"
-                alt="arrow icon"
-                alt="icon"
+                src="./images/client-databiz.svg"
+                alt="client logo - databiz"
+                class="client-logo"
               />
-              <ul class="hidden">
-                <li>
-                  <a href="#" class="menu__features">History</a>
-                </li>
-                <li>
-                  <a href="#" class="menu__features">Our Team</a>
-                </li>
-                <li>
-                  <a href="#" class="menu__features">Blog</a>
-                </li>
-              </ul>
             </li>
-            <!-- OTHERS -->
-            <li>
-              <a href="#" class="menu-link">Careers</a>
+            <li class="client">
+              <img
+                src="./images/client-audiophile.svg"
+                alt="client logo - audiophile"
+                class="client-logo"
+              />
             </li>
-            <li>
-              <a href="#" class="menu-link">About</a>
+            <li class="client">
+              <img
+                src="./images/client-meet.svg"
+                alt="client logo - meet"
+                class="client-logo"
+              />
+            </li>
+            <li class="client">
+              <img
+                src="./images/client-maker.svg"
+                alt="client logo - maker"
+                class="client-logo"
+              />
             </li>
           </ul>
-          <!-- REGI-LOG -->
-          <div class="RegLog-box">
-            <a href="#" class="menu-link">Login</a>
-            <button><a href="#" class="menu-link">Register</a></button>
-          </div>
+        </section>
+        <!-- hero-img -->
+        <div class="hero-img__box">
+          <img
+            class="hero-img__img"
+            src="./images/image-hero-desktop.png"
+            alt="Colorful graphic with many shapes, such as triangles, is depicted in the background, with a man holding a laptop on one of the shapes."
+          />
         </div>
-      </nav>
-    </header>
-    <!-- MAIN -->
-    <main class="main">
-      <!-- hero -->
-      <section class="hero">
-        <h1>Make remote work</h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button>Learn more</button>
-        <ul class="clients">
-          <li class="client">
-            <img
-              src="./images/client-databiz.svg"
-              alt="client logo - databiz"
-              class="client-logo"
-            />
-          </li>
-          <li class="client">
-            <img
-              src="./images/client-audiophile.svg"
-              alt="client logo - audiophile"
-              class="client-logo"
-            />
-          </li>
-          <li class="client">
-            <img
-              src="./images/client-meet.svg"
-              alt="client logo - meet"
-              class="client-logo"
-            />
-          </li>
-          <li class="client">
-            <img
-              src="./images/client-maker.svg"
-              alt="client logo - maker"
-              class="client-logo"
-            />
-          </li>
-        </ul>
-      </section>
-      <!-- hero-img -->
-      <div class="hero-img__box">
-        <img
-          class="hero-img__img"
-          src="./images/image-hero-desktop.png"
-          alt="Colorful graphic with many shapes, such as triangles, is depicted in the background, with a man holding a laptop on one of the shapes."
-        />
-      </div>
-    </main>
+      </main>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
