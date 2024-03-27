@@ -1,5 +1,6 @@
 :root {
   --clr-neutral-900: hsl(0, 0%, 98%);
+  --clr-neutral-800: hsl(0, 0%, 85%);
   --clr-neutral-500: hsl(0, 0%, 41%);
   --clr-neutral-100: hsl(0, 0%, 8%);
   --clr-neutral-10: hsl(0, 0%, 4%);
@@ -69,8 +70,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+  flex-direction: column;
+
   cursor: pointer;
+  position: relative;
+}
+
+.menu-dropdown__name-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .menu-link,
@@ -99,6 +109,43 @@ body {
 .menu-link {
   text-decoration: none;
 }
+
+/* DROPDOWN */
+
+.dropdown-box {
+  position: absolute;
+  top: 3.6rem;
+  right: 0;
+  list-style: none;
+  border-radius: 1rem;
+
+  box-shadow: 0 0.5rem 3rem 0.5rem var(--clr-neutral-800);
+  padding: 2.2rem;
+}
+
+.menu-dropdown__company {
+  left: 0;
+  right: auto;
+
+  /* flex-shrink: 0; */
+  /* flex-grow: 0; */
+}
+
+.our {
+  display: flex;
+}
+
+.dropdown-box > li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.dropdown-items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 /* BTN */
 
 .btn {
@@ -107,10 +154,20 @@ body {
   border-radius: 1.4rem;
   padding: 1.2rem 2rem;
   border: 0.2rem solid var(--clr-neutral-500);
+  transition: border 0.3s;
+  cursor: pointer;
 }
 
 .btn-link {
   color: var(--clr-neutral-500);
+  transition: color 0.3s;
+}
+.btn:hover .btn-link {
+  color: var(--clr-neutral-100);
+}
+
+.btn:hover {
+  border: 0.2rem solid var(--clr-neutral-100);
 }
 
 /* MAIN */
@@ -158,6 +215,12 @@ h1 {
   font-size: inherit;
   font-weight: inherit;
   padding: 1.65rem 2.8rem;
+  transition: all 0.2s;
+}
+
+.btn-more:hover {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
 }
 
 .clients {

@@ -41,24 +41,26 @@
             <ul class="menu">
               <!-- FEATURES -->
               <li class="menu__dropdown-box">
-                <p class="menu-dropdown">Features</p>
+                <div class="menu-dropdown__name-box">
+                  <p class="menu-dropdown">Features</p>
 
-                <svg
-                  class="icon"
-                  width="10"
-                  height="6"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke=""
-                    stroke-width="1.5"
-                    fill="none"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-
-                <ul class="hidden">
-                  <li>
+                  <svg
+                    class="icon"
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke=""
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+                <!-- DROPDOWN HIDDEN -->
+                <ul class="dropdown-box">
+                  <li class="dropdown-items">
                     <img
                       src="./images/icon-todo.svg"
                       alt="todo icon"
@@ -66,7 +68,7 @@
                     />
                     <a href="#" class="menu__features menu-link">Todo List</a>
                   </li>
-                  <li>
+                  <li class="dropdown-items">
                     <img
                       src="./images/icon-calendar.svg"
                       alt="calender icon"
@@ -74,7 +76,7 @@
                     />
                     <a href="#" class="menu__features menu-link">Calender</a>
                   </li>
-                  <li>
+                  <li class="dropdown-items">
                     <img
                       src="./images/icon-reminders.svg"
                       alt="reminders icon"
@@ -82,7 +84,7 @@
                     />
                     <a href="#" class="menu__features menu-link">Reminders</a>
                   </li>
-                  <li>
+                  <li class="dropdown-items">
                     <img
                       src="./images/icon-planning.svg"
                       alt="planning icon"
@@ -94,29 +96,33 @@
               </li>
               <!-- COMPANY -->
               <li class="menu__dropdown-box">
-                <p class="menu-dropdown">Company</p>
+                <div class="menu-dropdown__name-box">
+                  <p class="menu-dropdown">Company</p>
 
-                <svg
-                  class="icon"
-                  width="10"
-                  height="6"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke=""
-                    stroke-width="1.5"
-                    fill="none"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-                <ul class="hidden">
-                  <li>
+                  <svg
+                    class="icon"
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke=""
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+                <ul class="dropdown-box menu-dropdown__company">
+                  <li class="dropdown-items">
                     <a href="#" class="menu__features menu-link">History</a>
                   </li>
-                  <li>
-                    <a href="#" class="menu__features menu-link">Our Team</a>
+                  <li class="dropdown-items">
+                    <a href="#" class="menu__features menu-link our"
+                      >Our Team</a
+                    >
                   </li>
-                  <li>
+                  <li class="dropdown-items">
                     <a href="#" class="menu__features menu-link">Blog</a>
                   </li>
                 </ul>
