@@ -22,6 +22,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 1.8rem;
+  background-color: var(--clr-neutral-900);
 }
 
 .main-container {
@@ -123,16 +124,14 @@ body {
   padding: 2.2rem;
 }
 
-.menu-dropdown__company {
+.dropdown__company {
   left: 0;
   right: auto;
-
-  /* flex-shrink: 0; */
-  /* flex-grow: 0; */
+  /* display: grid; */
 }
 
 .our {
-  display: flex;
+  width: 6.8rem;
 }
 
 .dropdown-box > li:not(:last-child) {
@@ -184,6 +183,7 @@ body {
   display: grid;
   margin-right: 3.5rem;
   justify-content: end;
+  margin-left: 2rem;
 }
 
 .title-box {
@@ -227,8 +227,10 @@ h1 {
   align-self: end;
   margin-bottom: -1.2rem;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
+  /* flex-wrap: wrap; */
   gap: 4rem;
 }
 
