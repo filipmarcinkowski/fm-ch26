@@ -1,0 +1,173 @@
+@media (max-width: 76em) {
+  .header {
+    margin: 0 auto 1rem;
+  }
+
+  .hero {
+    margin: 0 2rem;
+    justify-content: start;
+  }
+  h1 {
+    font-size: 7rem;
+    margin: 3rem auto;
+  }
+
+  .clients {
+    align-self: start;
+    gap: 2rem;
+  }
+
+  .hero-img__img {
+    height: 80vh;
+  }
+}
+@media (max-width: 66em) {
+  .clients {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 6rem;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 59em) {
+  .header {
+    /* justify-items: center; */
+    position: relative;
+  }
+
+  .menu_open {
+    display: block;
+  }
+
+  .nav {
+    width: auto;
+    /* position: relative; */
+  }
+
+  .menu-container {
+    background-color: var(--clr-neutral-900);
+    border: 0.1rem solid red;
+    padding: 3rem;
+    padding-top: 10%;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    right: -60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .menu {
+    flex-direction: column;
+
+    display: grid;
+    gap: 2rem;
+  }
+
+  .menu-main {
+    margin-bottom: 3rem;
+    align-self: start;
+  }
+
+  .reglog {
+    width: 100%;
+    justify-items: center;
+
+    /* border: 0.1rem solid blue; */
+  }
+
+  .btn-reg {
+    width: 100%;
+  }
+
+  .main {
+    /* grid-template-columns: 1fr; */
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .title-desc {
+    font-size: 1.5rem;
+
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .clients {
+    align-self: end;
+  }
+
+  .btn-more {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    margin: 0 2rem;
+    justify-content: center;
+  }
+
+  .title-box {
+    display: grid;
+    padding-bottom: 1rem;
+    justify-items: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .title-desc {
+    text-align: center;
+  }
+
+  .hero-img__box {
+    grid-row: 1/2;
+    width: auto;
+    height: auto;
+
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .hero-img__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .clients {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .client-logo {
+    width: 6rem;
+    height: auto;
+  }
+}

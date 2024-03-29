@@ -4,7 +4,7 @@ const image = document.querySelector('.hero-img__img');
 
 const resolution = function () {
   image.src = `./images/image-hero-${
-    window.innerWidth > 1000 ? 'desktop' : 'mobile'
+    window.innerWidth > 704 ? 'desktop' : 'mobile'
   }.png`;
 };
 
