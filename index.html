@@ -33,14 +33,14 @@
         <!-- NAV CONTAINER -->
         <nav class="nav">
           <img
-            class="menu_open"
+            class="menu__open-icon"
             src="./images/icon-menu.svg"
             alt="hamburger menu icon"
           />
           <!-- ------------------------ -->
           <!-- NAVIGATION -->
           <!-- ------------------------ -->
-          <div class="menu-container">
+          <div class="menu-container open__menu-main">
             <!-- MENU -->
             <ul class="menu menu-main">
               <!-- FEATURES -->
@@ -63,14 +63,14 @@
                   </svg>
                 </div>
                 <!-- DROPDOWN HIDDEN -->
-                <ul class="dropdown-box hidden">
+                <ul class="dropdown-box">
                   <li class="dropdown-items">
                     <img
                       src="./images/icon-todo.svg"
                       alt="todo icon"
                       class="icon"
                     />
-                    <a href="#" class="menu__features menu-link">Todo List</a>
+                    <a href="#" class="menu-link">Todo List</a>
                   </li>
                   <li class="dropdown-items">
                     <img
@@ -78,7 +78,7 @@
                       alt="calender icon"
                       class="icon"
                     />
-                    <a href="#" class="menu__features menu-link">Calender</a>
+                    <a href="#" class="menu-link">Calender</a>
                   </li>
                   <li class="dropdown-items">
                     <img
@@ -86,7 +86,7 @@
                       alt="reminders icon"
                       class="icon"
                     />
-                    <a href="#" class="menu__features menu-link">Reminders</a>
+                    <a href="#" class="menu-link">Reminders</a>
                   </li>
                   <li class="dropdown-items">
                     <img
@@ -94,7 +94,7 @@
                       alt="planning icon"
                       class="icon"
                     />
-                    <a href="#" class="menu__features menu-link">Planning</a>
+                    <a href="#" class="menu-link">Planning</a>
                   </li>
                 </ul>
               </li>
@@ -118,17 +118,15 @@
                   </svg>
                 </div>
                 <!-- DROPDOWN HIDDEN -->
-                <ul class="dropdown-box dropdown__company hidden">
+                <ul class="dropdown-box dropdown__company">
                   <li class="dropdown-items">
-                    <a href="#" class="menu__features menu-link">History</a>
+                    <a href="#" class="menu-link">History</a>
                   </li>
                   <li class="dropdown-items">
-                    <a href="#" class="menu__features menu-link our"
-                      >Our Team</a
-                    >
+                    <a href="#" class="menu-link our">Our Team</a>
                   </li>
                   <li class="dropdown-items">
-                    <a href="#" class="menu__features menu-link">Blog</a>
+                    <a href="#" class="menu-link">Blog</a>
                   </li>
                 </ul>
               </li>
@@ -154,7 +152,7 @@
       <!-- MAIN -->
       <!-- ------------------------ -->
       <main class="main">
-        <!-- hero -->
+        <!-- HERO -->
         <section class="hero">
           <div class="title-box">
             <h1>Make remote work</h1>
@@ -164,6 +162,7 @@
             </p>
             <button class="btn btn-more">Learn more</button>
           </div>
+          <!-- CLIENTS -->
           <ul class="clients">
             <li class="client">
               <img
@@ -195,9 +194,8 @@
             </li>
           </ul>
         </section>
-        <!-- hero-img -->
+        <!-- HERO-IMAGE -->
         <div class="hero-img__box">
-          <!-- <div class="bg-img"></div> -->
           <img
             class="hero-img__img"
             src="./images/image-hero-desktop.png"
