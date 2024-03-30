@@ -44,6 +44,7 @@
     display: block;
     z-index: 100;
     position: relative;
+    cursor: pointer;
   }
 
   .nav {
@@ -55,7 +56,7 @@
 
   .menu-container {
     height: 100vh;
-    width: 60%;
+    width: 70%;
 
     flex-direction: column;
     align-items: center;
@@ -63,13 +64,14 @@
 
     position: absolute;
     top: 0;
-    right: -60%;
+    right: -70%;
 
-    padding: 10% 3rem 0;
+    padding: 18% 3rem 0;
     background-color: var(--clr-neutral-900);
-    /* border: 0.1rem solid red; */
+    transition: right 0.3s;
 
     z-index: 10;
+    /* border: 0.1rem solid red; */
   }
 
   .menu {
@@ -81,6 +83,10 @@
   .menu-main {
     align-self: start;
     margin-bottom: 3rem;
+  }
+
+  .menu-dropdown__name-box {
+    align-self: start;
   }
 
   .dropdown-box {
