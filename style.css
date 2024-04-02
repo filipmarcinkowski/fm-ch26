@@ -123,24 +123,6 @@ body {
 .menu-link {
   text-decoration: none;
 }
-/* ////////////////////////////////////////////// */
-/* DROPDOWN */
-
-/* .height {
-  height: 0;
-  display: block;
-}
-
-.box {
-  display: grid;
-  grid-template-rows: 0fr;
-}
-
-.menu__dropdown-box:hover .box {
-  grid-template-rows: 1fr;
-} */
-
-/* /////////////////////////////////////////// */
 
 .dropdown-box {
   /* overflow: hidden; */
